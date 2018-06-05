@@ -1,0 +1,47 @@
+package it.finsoft.one_to_many.model;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="movies")
+public class Movie {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	int id;
+	private String name;
+	
+	
+	private Set<MovieDetail> moviedetails = new HashSet<>();
+	
+	
+    
+    
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@OneToMany(mappedBy = "movie", cascade={CascadeType.ALL})
+	public Set<MovieDetail> getMoviedetails() {
+		return moviedetails;
+	}
+	public void setMoviedetails(Set<MovieDetail> moviedetails) {
+		this.moviedetails = moviedetails;
+	}
+	
+	
+	
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\Workspace_Hibernate\oneToone-movie"/>
+		<item value="D:\workspaceMusa\Movie"/>
+		<item value="D:\Workspace_Hibernate\manyTomany-car"/>
+		<item value="D:\Workspace_Hibernate\manyTomany-oneToone"/>
+		<item value="D:\Workspace_Hibernate\car-manyTomany"/>
+		<item value="D:\workspaceMusa"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Workspace_Hibernate\one_to_many"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

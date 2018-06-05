@@ -1,0 +1,56 @@
+package it.finsoft.one_to_many.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="moviedetail")
+public class MovieDetail {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	int id;
+	
+	private String name;
+	private String description;
+
+	@ManyToOne
+	private Movie movie;
+	
+	
+
+	
+
+	public MovieDetail(String name, String description, Movie movie) {
+		super();
+		this.name = name;
+		this.description = description;
+		this.movie = movie;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+	public Movie getMovie() {
+		return movie;
+	}
+
+	public void setMovie(Movie movie) {
+		this.movie = movie;
+	}
+	
+
+}
