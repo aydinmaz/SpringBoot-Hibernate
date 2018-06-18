@@ -1,0 +1,8 @@
+package it.finsoft.oneTomanyrecursive.model;
+
+import javax.persistence.*;
+
+@Entity 
+public class Site {
+
+}

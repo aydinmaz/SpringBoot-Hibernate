@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=D\:\\workspaceMusa\\Musa_webapp\\.git;D\:\\workspaceMusa\\Musa_webapp2\\.git;
-GitRepositoriesView.GitDirectories.relative=D\:\\workspaceMusa\\Musa_webapp\\.git;D\:\\workspaceMusa\\Musa_webapp2\\.git;
+GitRepositoriesView.GitDirectories=D\:\\Workspace_Hibernate\\.git;D\:\\workspaceMusa\\Musa_webapp\\.git;D\:\\workspaceMusa\\Musa_webapp2\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;D\:\\workspaceMusa\\Musa_webapp\\.git;D\:\\workspaceMusa\\Musa_webapp2\\.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

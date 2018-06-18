@@ -6,6 +6,7 @@ import java.util.Set;
 import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name="movies")
@@ -36,8 +37,8 @@ public class Movie {
 		this.name = name;
 	}
 	// be khater Rest pi , jacson recursive error midad ke ba in halesh kardm
-	@JsonBackReference
-	@OneToMany(mappedBy = "movie", cascade={CascadeType.ALL})
+	@JsonManagedReference
+	@OneToMany(mappedBy = "movie", cascade={CascadeType.ALL},fetch=FetchType.EAGER)
 	public Set<MovieDetail> getMoviedetails() {
 		return moviedetails;
 	}

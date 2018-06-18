@@ -19,7 +19,7 @@ public class MovieController {
 	
 	//@Transactional
 	@GetMapping("/movie")
-	public Iterable<MovieDetail> qualcosa()
+	public Iterable<Movie> qualcosa()
 	{
 		Movie mv1=new Movie();
 		Movie mv2=new Movie();
@@ -43,6 +43,6 @@ public class MovieController {
 
 		movierepo.save(mv1);
 		movierepo.save(mv2);
-		return detailrepo.findAll();
+		return movierepo.findAll();
 	}
 }

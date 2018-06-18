@@ -2,6 +2,9 @@ package it.finsoft.one_to_many.model;
 
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JacksonInject;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
@@ -30,6 +33,12 @@ public class MovieDetail {
 		this.id = id;
 	}
 
+	
+	
+	public MovieDetail() {
+		super();
+	}
+
 	public MovieDetail(String name, String description, Movie movie) {
 		super();
 		this.name = name;
@@ -53,7 +62,7 @@ public class MovieDetail {
 		this.description = description;
 	}
 	
-	@JsonManagedReference
+	@JsonBackReference
 	@ManyToOne
 	public Movie getMovie() {
 		return movie;

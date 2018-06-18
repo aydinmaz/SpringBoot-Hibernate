@@ -1,0 +1,6 @@
+package it.finsoft.oneTomanyrecursive.model;
+
+@Entity 
+public class Site {
+
+}

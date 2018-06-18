@@ -1,0 +1,5 @@
+package it.finsoft.oneTomanyrecursive.model;
+
+public class Site {
+
+}
