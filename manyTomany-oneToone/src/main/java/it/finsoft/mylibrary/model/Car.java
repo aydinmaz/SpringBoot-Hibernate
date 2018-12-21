@@ -11,45 +11,14 @@ public class Car
   private String color;
   private String size;
   private Engine engine;
-  private List<Owner> owner;//because one car can have different owners so this variable should be the List type
-  							//also you can use Set instead of List ,but they have some differences.
+  private List<Owner> owner;
+  //because one car can have different owners so this variable should be the List type
+  //also you can use Set instead of List ,but they have some differences.
   
   public Car() 
    { super();  }
 
-/*
-public Car(int id) 
-    {
-	super();
-	this.id = id;
-    }*/
 
-
-public Car( String name) 
-   {
-	super();
-	
-	this.name = name;
-   }
-
-
-public Car( String name, String color) 
-    {
-	super();
-	
-	this.name = name;
-	this.color = color;
-    }
-
-
-public Car( String name, String color, String size) 
-    {
-	super();
-	
-	this.name = name;
-	this.color = color;
-	this.size = size;
-    }
 
 
 public Car( String name, String color, String size, Engine engine)
@@ -105,10 +74,6 @@ public List<Owner> getOwner() {
 public void setOwner(List<Owner> owner) {
 	this.owner = owner;
 }
-
-public String toString()
-   { return String.format("car[id=%d,color= '%s', name= '%d',size='%s']",
-			id,color,name,size,engine); }
 
   
 }

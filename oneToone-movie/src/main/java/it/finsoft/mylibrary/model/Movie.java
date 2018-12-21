@@ -13,22 +13,7 @@ public class Movie
 	public Movie()
 			{  }
 	
-	/*public Movie(String title)
-			{
-				this.title = title;
-			}
-	public Movie(String title,int year)
-			{
-				this.title = title;
-				this.year =year;
-			}
-
-	public Movie(String title,int year,String type)
-			{
-				this.title = title;
-				this.year =year;
-				this.type=type;
-			}*/
+	
 	//lozumi nadare in hame costructor dorost koni,yeki kamel drst kon va parametri ro ke nemikhay pass koni null rad kon
 	public Movie(String title,int year,String type,MovieDetail moviedetail)
 			{

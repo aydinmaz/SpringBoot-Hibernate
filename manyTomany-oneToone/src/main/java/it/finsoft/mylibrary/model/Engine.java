@@ -11,18 +11,10 @@ private int id;
 private String power;
 private String voice;
 
-public Engine() {//constructor
+public Engine() {
 	super();
-}/*
-public Engine(int id) {
-	super();
-	this.id = id;
-}*/
-public Engine( String power) {
-	super();
-	
-	this.power = power;
 }
+
 public Engine( String power, String voice) {
 	super();
 	

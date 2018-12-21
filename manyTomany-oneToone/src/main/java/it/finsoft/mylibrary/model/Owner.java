@@ -10,20 +10,13 @@ public class Owner {
 	private String lastname;
 	private List<Car> car;
 	
-	public Owner() {
+	public Owner() 
+	{
 		super();
-	}
-	public Owner(String name) {
-		super();
-		this.name = name;
-	}
-	public Owner(String name, String lastname) {
-		super();
-		this.name = name;
-		this.lastname = lastname;
 	}
 	
-	public Owner(String name, String lastname, List<Car> car) {
+	public Owner(String name, String lastname, List<Car> car) 
+	{
 		super();
 		this.name = name;
 		this.lastname = lastname;
@@ -58,8 +51,5 @@ public class Owner {
 		this.car = car;
 	}
 	
-	public String toString()
-	   { return String.format("owner[id=%d,name= '%s', lastname= '%s']",
-				id,name,lastname,car); }
 
 }
