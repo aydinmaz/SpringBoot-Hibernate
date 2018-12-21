@@ -35,7 +35,7 @@ public class Book
 		this.name = name;
 	}
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne( cascade = CascadeType.ALL)
 	//@JoinColumn(name = "book_detail_id")//hazf in tasiri nagzasht,in ham vase namgozarist
 	public BookDetail getBookDetail() {
 		return bookDetail;

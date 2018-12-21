@@ -17,12 +17,8 @@ public class Publisher
 	public Publisher()
 	{  }
 	
-	        // public Publisher(String name) {
-			    //  super();
-			     // this.name = name;
-		           //  }
-                  // mishe injoori yek constructor singular ijaad kard ama in,practic khubi nist,rahattare yek yek constructor
-	              //kolli ijad koni va baadan null pass koni
+// mishe injoori yek constructor singular ijaad kard ama in,practic khubi nist,rahattare yek yek constructor
+//kolli ijad koni va baadan null pass koni
 	public Publisher(String name,String address,Book book,Author author)
 	{
 		this.name = name;
@@ -57,7 +53,7 @@ public class Publisher
 		this.address = address;
 	}
 	
-	@OneToOne//(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "author_id")
 	public Author getAuthor() {
 		return author;

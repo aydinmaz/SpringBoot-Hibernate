@@ -26,14 +26,14 @@ public Integer getId()
 public void setId(Integer id) 
 { this.id = id; }
 
-@Column(name="tedad_safhe")
+@Column(name="tedad_safhe")//faqat esmesh ro avaz mikone
 public Integer getNumberOfPages()
 { return numberOfPages; }
 
 public void setNumberOfPages(Integer numberOfPages) 
 { this.numberOfPages = numberOfPages; }
 
-@OneToOne(mappedBy = "bookDetail")
+@OneToOne(mappedBy="bookDetail")
 public Book getBook() 
 { return book; }
 

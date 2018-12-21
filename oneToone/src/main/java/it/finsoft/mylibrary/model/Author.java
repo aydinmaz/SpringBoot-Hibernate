@@ -15,11 +15,12 @@ public class Author
     public Author()
 	{  }
 	
-	public Author(String name,String lastname,Book book)
+	public Author(String name,String lastname,Book book,Publisher publisher)
 	{
 		this.name = name;
 		this.lastname=lastname;
 		this.book = book;
+		this.publisher = publisher;
 	}
 	
 	@Id 

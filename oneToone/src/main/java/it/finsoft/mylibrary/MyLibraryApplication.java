@@ -1,6 +1,7 @@
 package it.finsoft.mylibrary;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -63,33 +64,38 @@ public class MyLibraryApplication implements CommandLineRunner {
 		// save a couple of authors
 		List<Author> authors = new ArrayList<>();
 
-		Author a1 = new Author("A", "A2", b1);
-		Author a2 = new Author("", "A2", null);
-		Author a3 = new Author("A1", "A3", b3);
+		Author a1 = new Author("A", "A2", b1,null);
+		Author a2 = new Author("", "A2", null,null);
+		Author a3 = new Author("A1", "A3", b3,null);
 
+
+		
+		List<Publisher> publishers = new ArrayList<>();
+
+		// publishers.add(new Publisher("ABC", "street" , b1,a1));
+	
+		Publisher p1=new Publisher();
+		Publisher p2=(new Publisher("ABC2", "street2", b2, a2));
+		Publisher p3=new Publisher("", "street3", null, a1);
+		Publisher p4=new Publisher("abc4", null, null, a3);
+		publishers.addAll(Arrays.asList(p1,p2,p3,p4));
+	
+		// publishers.add(new Publisher("street3"));
+		a1.setPublisher(p3);
+		a2.setPublisher(p2);
+		a3.setPublisher(p4);
 		authors.add(a1);
 		authors.add(a2);
 		authors.add(a3);
-
-		authorRepository.saveAll(authors);
+       
+		
 		// agar in autorrepository ro comment konam az table e author faqat unjayish ke
 		// dar ye table dige ertebat dare neshun mide
 		// fetch all authors
 		// nokte dovvom inke agar in ro comment kardi bayad ebarat "cascade .." dar yeki
 		// az jadval ha ke autor be on rabt dade shode ham comment koni
-		// TODO Auto-generated method stub
-		// save a couple of publishers
-		List<Publisher> publishers = new ArrayList<>();
-
-		// publishers.add(new Publisher("ABC", "street" , b1,a1));
-		publishers.add(new Publisher());
-		publishers.add(new Publisher("ABC2", "street2", b2, a2));
-		publishers.add(new Publisher("", "street3", null, null));
-		publishers.add(new Publisher("abc4", null, null, null));
-		// publishers.add(new Publisher("street3"));
-
 		publisherRepository.saveAll(publishers);
-
+		authorRepository.saveAll(authors);
 		// fetch all authors
 
 	}
